@@ -1,0 +1,23 @@
+{
+  "name": "mean_satck",
+  "version": "1.0.0",
+  "description": "mean stack development ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dagzadag/mean_stack.git"
+  },
+  "keywords": [
+    "mean",
+    "stack"
+  ],
+  "author": "dagdag yahia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dagzadag/mean_stack/issues"
+  },
+  "homepage": "https://github.com/dagzadag/mean_stack#readme"
+}
