@@ -1,23 +1,31 @@
 {
   "name": "mean_satck",
   "version": "1.0.0",
-  "description": "mean stack development ",
+  "description": "MEAN stack auth app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dagzadag/mean_stack.git"
   },
-  "keywords": [
-    "mean",
-    "stack"
-  ],
-  "author": "dagdag yahia",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dagzadag/mean_stack/issues"
   },
-  "homepage": "https://github.com/dagzadag/mean_stack#readme"
+  "homepage": "https://github.com/dagzadag/mean_stack#readme",
+  "devDependencies": {}
 }
