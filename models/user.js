@@ -39,11 +39,16 @@ module.exports.getUserById = (id,callback)=>{
   User.findById(id,callback)
 }
 
-//find by username
+//find by username or Email
 
 module.exports.getUserByUsername = (username,callback)=>{
-  const query = {username}
-  User.findOne(query,callback)
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(username)) {
+    const query = {email:username}
+    User.findOne(query,callback)
+  }else{
+    const query = {username}
+    User.findOne(query,callback)
+  }
 }
 
 

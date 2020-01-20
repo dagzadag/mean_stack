@@ -41,6 +41,7 @@ router.post('/login',(req,res,next)=>{
           });
           res.json({
             success:true,
+            msg:"Welcome back : " + user.name,
             token: "JWT " + token,
             user :{
               id:user._id,
@@ -59,7 +60,7 @@ router.post('/login',(req,res,next)=>{
 //profile route
 
 router.get('/profile',passport.authenticate('jwt',{session:false}),(req,res,next)=>{
-  res.send('profile');
+   res.json({user: req.user});
 })
 //validate route
 
