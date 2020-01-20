@@ -8,7 +8,6 @@ const config = require('./config/database');
 
 
 const users = require('./routes/users');
-
 //initialise express app
 const app = express();
 //port
